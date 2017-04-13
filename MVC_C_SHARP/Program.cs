@@ -10,6 +10,12 @@ namespace MVC_C_SHARP
     {
         static void Main(string[] args)
         {
+            UserController controller = new UserController();
+            controller.Model = new User("Vasa","Vasa@gmail.com");
+            controller.View = new UserView();
+            controller.update();
+
+            Console.ReadLine();
         }
     }
 }
